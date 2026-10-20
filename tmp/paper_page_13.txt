@@ -1,0 +1,93 @@
+7932 J. XIE ET AL.
+Table 7. ExperimentalresultsforBCdatainstances.
+HGTSA MAE SSPR AWLS
+Problem UB(LB) Best Mav Best Mav Best Mav GRASP-mELS HA Best Mav
+mt10c1 927(927) 927 927 927 927 927 928 927 927 927 927.30
+mt10cc 908(908) 908 908 908 909.4 908 908 908 908 908 908.40
+mt10x 918(918) 918 918 918 918 918 918 918 918 918 918.00
+mt10xx 918(918) 918 918 918 918 918 918 918 918 918 918.00
+mt10xxx 918(918) 918 918 918 918 918 918 918 918 918 918.00
+mt10xy 905(905) 905 905 905 905 905 906 905 905 905 905.10
+mt10xyz 847(847) 847 847 847 847 847 847 847 847 847 847.00
+setb4c9 914(914) 914 914 914 914 914 916 914 914 914 914.00
+setb4cc 907(907) 907 907 907 907 907 907 907 907 907 907.00
+setb4x 925(925) 925 925 925 925 925 925 925 925 925 925.00
+setb4xx 925(925) 925 925 925 925 925 925 925 925 925 925.00
+setb4xxx 925(925) 925 925 925 925 925 925 925 925 925 925.00
+setb4xy 910(910) 910 910 910 910 910 912 910 910 910 910.00
+setb4xyz 902(902) 902 902 902 903.55 905 905 902 905 902 904.50
+seti5c12 1169(1169) 1169 1170.2 1170 1173.2 1170 1173 1169 1170 1169 1170
+seti5cc 1135(1135) 1135 1135.4 1135 1135.65 1135 1136 1135 1136 1135 1135
+seti5x 1198(1198) 1198 1199.3 1198 1199.35 1198 1199 1198 1198 1198 1198
+seti5xx 1194(1194) 1194 1196.2 1197 1197 1197 1199 1194 1197 1194 1198
+seti5xxx 1194(1194) 1194 1196.3 1194 1196.7 1194 1198 1194 1197 1194 1197
+seti5xy 1135(1135) 1135 1135.2 1135 1136 1135 1136 1135 1136 1135 1135
+seti5xyz 1125(1125) 1125 1125.3 1125 1125.65 1125 1126 1125 1125 1125 1125
+MRE - 0.00 0.03 0.02 0.07 0.03 0.12 0.00 0.05 0.00 0.06
+Boldindicatesthattheknownoptimalsolutionisreached.
+Table 8. ComputingtimeforBCdatainstances.
+Problem Size HGTSA a MAEb SSPRc
+GRASP-
+mELSd HAe AWLSf
+mt10c1 10 ×11 43.21 61.69 26 8 12 4.99
+mt10cc 10 ×12 67.26 125.5 20 17 10 23.0
+mt10x 10 ×11 15.67 25.67 23 2 11 4.94
+mt10xx 10 ×12 2.22 4.5 19 2 11 3.06
+mt10xxx 10 ×13 8.57 6.78 20 2 11 2.45
+mt10xy 10 ×12 16.04 34.42 21 26 11 29.9
+mt10xyz 10 ×13 68.57 256.38 20 26 9 21.0
+setb4c9 15 ×11 215.3 302.61 28 11 15 15.4
+setb4cc 15 ×12 13.86 12.54 21 29 15 6.66
+setb4x 15 ×11 16.66 16.42 19 4 13 3.42
+setb4xx 15 ×12 6.13 7.7 21 2 5 2.91
+setb4xxx 15 ×13 6.93 8.45 22 3 9 3.21
+setb4xy 15 ×12 24.17 58.79 32 18 12 9.78
+setb4xyz 15 ×13 342.97 956.86 21 11 14 14.7
+seti5c12 15 ×16 89.82 205.86 25 39 31 23.9
+seti5cc 15 ×17 154.79 243.52 29 24 17 39.6
+seti5x 15 ×16 137.34 341.4 41 36 27 24.5
+seti5xx 15 ×17 303.18 473.48 37 26 29 17.6
+seti5xxx 15 ×18 237.33 612.57 38 27 19 33.3
+seti5xy 15 ×17 94.52 227.91 29 28 17 45.1
+seti5xyz 15 ×18 165.57 336.27 35 42 33 41.4
+a,b,c,d,e,f:hasthesamemeaningasinTable 6.
+path to avoid HGTSA from falling into the local
+optimal.
+(2) Neighbourhood Structures : Aiming at the
+machineflexibilitycharacteristicsofFJSP,N8and k-
+insertion neighbourhood structures are combined
+toimprovethelocalsearchabilityofHGTSA.
+(3) Performance and Benchmarking: On all three
+benchmarks, HGTSA shows better result quality
+and stability than other state-of-art algorithms. A
+n e wu p p e rb o u n do nD P d a t ai sa l s of o u n db y
+HGTSA.
+T h eg r e a ts i g n i fi c a n c eo ft h i sr e s e a r c hl i e si ni t sf o u n -
+dational contribution to IFPS for enhanced manufactur-
+ing efficiency. In IFPS, the outcome of HGTSA is fully
+applied. Notably, the implemented system provides an
+empirical validation of mass customisation at an indus-
+trial scale. Subsequent publications will elaborate on the
+architectural framework of the complete intelligent pro-
+ductionsolution,systematicallyaddressingimplementa-
+tion challenges and corresponding engineering resolu-
+tionsthroughdetailedtechnicalexposition.
+F J S Pi sas t a n d a r dm o d e lw e l l - s u i t e dt om a s sc u s t o m i
+sation. Therefore, it is somewhat different from what
+actually happens in IFPS. Currently, we bridge the gap
+b e t w e e nt h eF J S Pm o d e la n dt h ea c t u a lm a n u f a c t u r i n g
+system by means of simulation, but this in turn creates
+the problem of inaccurate optimisation. In the future,
+more details will be added to the FJSP model, including
+warehousingandtransportation,inordertoimprovethe
+accuracyoftheoptimisationprocess.
+In addition, the research in this paper can also be
+further extended to the distributed flexible job-shop
+schedulingproblemforsocialmanufacturinginthemod-
+ern business environment. However, the large hybrid
+neighbourhood structure in the proposed algorithm is
+a limitation, and future research should focus on reduc-
+ing the redundant solution space in the neighbourhood
+structuretoimproveefficiency.
+Disclosure statement
+Nopotentialconflictofinterestwasreportedbytheauthor(s).
