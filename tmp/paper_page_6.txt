@@ -1,0 +1,94 @@
+INTERNATIONAL JOURNAL OF PRODUCTION RESEARCH 7925
+Step 4: Crossover and mutation.Executethenewloop
+until a new populationP’w i t has i z eo fPSis gener-
+ated: two parent individualsxf and xm are selected by
+roulette,andusedtogeneratemultipleoffspringindivid-
+ualsbycrossoverbasedonpath-relinking.Subsequently,
+amutationandasmall-scaletabusearchareexecutedon
+these offspring individuals (Step 4.1 and Step 4.2), and
+the optimal individual among them is selected into the
+newpopulation P’.
+Step4.1:Mutation.Multipleoffspringindividualsgen-
+eratedbythecrossoverperformthemutationtogener-
+ate new individuals.
+Step 4.2: Small-scale tabu search. After the mutation,
+a small-scale tabu search is carried out for the mutated
+offspring individuals, and their neighbourhood solu-
+tionisobtained.
+Step 5: Large-scale Tabu Search.Performalarge-scale
+tabu search for each individual in the populationP’t o
+enhancethesesolutions.
+Step 6: Population update.C o m b i n et h ep o p u l a t i o n s
+P and P’, and select thePS solutions with the smallest
+fitness value for updating P.
+Step 7: T ermination condition. If the fitness value of
+the current optimal solution reaches the lower bound,
+orthenumberofiterationsofthealgorithmexceedsthe
+preset maximum, output the current optimal solution;
+otherwise,returntoStep4.
+ThekeycomponentsofHGTSAincludetheencoding
+anddecodingmethod,thecrossoveroperator,themuta-
+tion operator, and the TS algorithm. These important
+componentswillbedescribedindetaillater.
+3.1. Encoding and decoding
+I nH G T S A ,t h ee n c o d i n gm e t h o db a s e do nt h ed i s j u n c -
+tive graph is adopted, and the corresponding schedul-
+ing scheme is obtained by determining the processing
+sequence of each operation on each machine. In this
+encoding method, a chromosome containsm strings,
+where each string corresponds to a specific machine.
+Eachstringrepresentstheprocessingsequenceofthejobs
+on the machine, and each element in the string denot-
+ing a job is an integer with a value range between [1,
+n]. Because each operation of FJSP can be processed
+in multiple machines, the length of each string always
+varies.
+The FJSP case given in Table1 is used to clarify the
+encodingmethodadoptedinthispaper.Thecaseconsists
+o f3j o b sa n d3m a c h i n e s ,e a c ho fw h i c hh a s2o p e r a -
+tions to process. If it is assumed that the chromosome
+corresponding to this case is [(2 3 1) (1 3) (2)], then the
+s t r i n g s( 231 ) ,( 13 ) ,a n d( 2 )r e p r e s e n tt h ep r o c e s s i n g
+Figure 3. Ganttgraphcorrespondingtochromosome[(231)(1
+3)(2)].
+order of the jobs on machine 1, machine 2, and machine
+3, respectively. Figure3 shows the Gantt graph of the
+corresponding chromosomes, from which it can be seen
+thatthemakespanofthisscheduleis9.
+3.2. Crossover operator
+The crossover operator in HGTSA can generate multi-
+ple offspring individuals by constructing a transforma-
+tionpathbetweentwoparentindividuals.Afterselecting
+two parent individualsx
+f and xm from the population
+by roulette selection, the processing machines of one
+operation are iteratively changed or the positions of two
+operations on the same machine are exchanged, thus
+forming a path fromx
+f to xm. In each iteration,xf is
+progressively modified toxm by changing the process-
+ing machine or switching operations, generating candi-
+date offspring individuals along the evolutionary path.
+Figure4illustratesthecrossoveroperator.First,thepro-
+c e s s i n gm a c h i n eo fj o b2i sc h a n g e df r o mm a c h i n e2t o
+machine 1. After machine transformation, the position
+ofjob2onmachine1in x
+f isthesameasthatofjob2on
+machine 1 inxf. Subsequently, swap job 4 and job 3 on
+machine1in xf.Afterswapping,thepositionofjob3on
+machine 1 inxf matches its position inxm.A f t e r5s u c h
+transformations,xf is eventually converted toxm.A f t e r
+theaboveseriesofmachinetransformationsandprocess
+exchange operations, a path fromx
+f to xm is generated,
+asshowninFigure 4.
+Asthenumberofjobsandmachinesincreases,alarge
+numberofcandidatesolutionsaregeneratedonthepath
+from x
+f to xm. The number of candidate solutions is so
+l a r g et h a te v e ne x e c u t i n gas m a l l - s c a l eo ft a b us e a r c ho n
+eachofthemcanbecomputationallyexpensive.Consid-
+ering this, only partial solutions on the path fromx
+f to
+xm are selected to perform the tabu search. The partial
+solutions are selected as follows: first,xf after αprocess

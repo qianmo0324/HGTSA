@@ -1,0 +1,107 @@
+7922 J. XIE ET AL.
+prohibitive for larger problems. Heuristic algorithms
+can quickly obtain feasible solutions in most scenarios.
+Commonly used heuristic rules like shortest processing
+time (SPT), longest processing time (LPT), earliest due
+date(EDD),first-in-first-out(FIFO),andlast-in-first-out
+(LIFO) (Montazeri and Van Wassenhove1990). Some
+researchershavecombinedmultiplerulestoimproveper-
+formance.Forinstance,Zhangetal.( 2021)usedagenetic
+programming approach to integrate different schedul-
+i n grul e s .H o w ev e r ,h e u ri s ti cm e th od ss tru ggl et oo b ta i n
+a high-quality solution in workshops with more con-
+straints.
+Meta-heuristicmethods,ontheotherhand,arecapa-
+ble of finding approximate optimal solutions within a
+reasonable timeframe, making them the most potential
+and dominant method for solving FJSP in recent years.
+These methods include swarm intelligence algorithms
+and local search algorithms. Swarm intelligence algo-
+rithms leverage population-level information exchange
+f o rg l o b a lo p t i m i s a t i o nb u to f t e ne x h i b i tw e a kl o c a l
+searchcapabilities.Themostcommonlyusedpopulation
+intelligence algorithms for solving FJSP include genetic
+algorithm (GA) (Wei et al.2024), particle swarm opti-
+misation (PSO) algorithm (Duan and Wang2022), arti-
+ficial bee colony (ABC) algorithm (Tian et al.2023),
+andsoon.Inlocalsearchalgorithms,asingleindividual
+evolves itself by exploring the surrounding neighbour-
+hoodsolutions,guidedbyefficientneighbourhoodstruc-
+ture. The most commonly used local search algorithms
+in FJSP include the simulated annealing (SA) algorithm
+(Defersha,Obimuyiwa,andYimer 2022),variableneigh-
+bourhood search (VNS) algorithm (Li, Gong, and Lu
+2022), iterated greedy (IG) algorithm (Beldjilali2019)
+andtabusearch(TS)(MastrolilliandGambardella 2000).
+Hybrid meta-heuristic algorithms combine the popula-
+tionswarmoptimisationalgorithmwiththelocalsearch
+algorithm,achievingabalancebetweentheglobalexplo-
+ration and the local exploitation. Examples include the
+combination of ABC and TS by Li et al. (2017)a n dt h e
+hybridisationofPSOandVNSbyFattahietal.( 2020).
+During the research process, a series of bench-
+marks have been developed to facilitate algorithm com-
+parisons, including BRdata by Brandimarte ( 1993),
+BCdata by Chambers and Barnes (1998), and DPdata
+byDauzerePeresandPaulli( 1997).Numerousoutstand-
+ing algorithms have demonstrated their superiority by
+refreshingtheupperboundsofinstancesonthesebench-
+marks.Amirietal.( 2010) developed various neighbour-
+hood structures for assignment and sequencing in VNS.
+Li and Gao (2016)h y b r i d i s e sG Aa n dT St om i n i m i s e
+themakespan ofthesebenchmarks. Intheirresearch,an
+effectiveencodingmethod,geneticoperatorsinGA,and
+neighbourhood structures for mutation and TS are used
+to enhance the search performance. González, Vela, and
+Varela (2015) propose effective neighbourhood struc-
+tures for FJSP, including feasibility and non-improving
+conditions,aswellasproceduresforfastestimationofthe
+neighbor‘s quality. A key innovation of their research is
+theintroductionofthepathrelinkingalgorithmintothe
+crossover operation, which enables a more fine-grained
+search and significantly enhances global search capabili-
+ties.Kemmoé-Tchomté,Lamy,andTchernev( 2017)pro-
+posedamulti-startlocalsearchalgorithmforFJSP.Ding
+etal.( 2019)simplifiedthecomplexpopulationevolution
+totwoindividualsco-evolving,greatlyreducingthecom-
+putational effort. Zhang et al. (2024)p r o p o s e das i n g l e -
+solution-based local search algorithm with an innova-
+tive adaptive weighting technique (AWLS). A common
+thread in these studies is that they all focus on the
+design of the neighbourhood structure as a top prior-
+ity for improving the performance of the algorithms.
+Whilethesealgorithmsabovehaverefreshedsomeupper
+bounds for the three famous benchmarks, a series of
+instancesremainunresolved.
+In this paper, an efficient hybrid meta-heuristic
+algorithm, a hybrid genetic tabu search algorithm
+(HGTSA), is proposed for benchmarks of HFSP. Fea-
+turing a well-designed framework and three innova-
+tive operators, it can well balance the search depth
+and computational efficiency. An efficient hybrid neigh-
+bourhood structure is incorporated to enhance perfor-
+mance.Comprehensiveexperimentsconductedonstan-
+dard benchmarks validate the effectiveness of HGTSA.
+Thealgorithmnotonlyshowsbettersolutionqualityand
+stability than all the previous excellent algorithms, but
+also improves the upper bound of the ‘06a’ instance on
+DPdata benchmark.
+At the same time, this study constitutes a component
+of our ongoing research on comprehensive intelligent
+flexibleproductionsolutions(IFPS).Withinarealindus-
+trial setting, a fully functional smart flexible production
+system (as illustrated in Figure1) comprising an exper-
+imental production line, a stereoscopic warehouse, and
+other ancillary equipment, has been established. This
+system implements job-level intelligent scheduling algo-
+rithmsanddemonstratesflexiblemanufacturingcapabil-
+itiesthattheoreticallyenableefficientaccommodationof
+unlimited product variants and authentic mass customi-
+sation.
+T h er e s to ft h i sp a p e rw i l lb eo r g a n i s e da sf o l -
+lows: Section 2 provides a detailed description of FJSP,
+Section 3 introduces the proposed hybrid algorithm,
+Section 4 presents the experiments of this algorithm
+and performance comparisons on benchmarks, and
+Section 5 concludes and looks forward to future
+work.

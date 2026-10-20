@@ -1,0 +1,117 @@
+7934 J. XIE ET AL.
+Science and Technology, Wuhan, China.
+His current research interests include dis-
+creteoptimisationandshopscheduling.
+Liang Gao received the Ph.D. degree
+in mechatronic engineering from the
+HuazhongUniversityofScienceandTech-
+nology (HUST), Wuhan, China, in 2002.
+He is a Professor of the Department of
+Industrial & Manufacturing System Engi-
+neering, State Key Laboratory of Intelli-
+gent Manufacturing Equipment & Tech-
+nology, School of Mechanical Science & Engineering, HUST.
+He had published more than 400 refereed papers. His research
+interestsincludeoperationsresearchandoptimisation,bigdata
+andmachinelearningetc.
+Xinyu Li received his Ph.D. degree in
+industrial engineering from Huazhong
+University of Science and Technology
+(HUST), China, 2009. He is a Pro-
+fessor of the Department of Industrial
+& Manufacturing Systems Engineering,
+State Key Laboratory of Intelligent Man-
+ufacturing Equipment & Technology,
+School of Mechanical Science & Engineering, HUST. He had
+publishedmorethan100refereedpapers.Hisresearchinterests
+include intelligent algorithm, big data and machine learning
+etc.
+Chunjiang Zhangreceived the B.Eng. and
+Ph.D. degrees in industrial engineering
+fromHuazhongUniversityofScienceand
+T e c h n o l o g y( H U S T ) ,W u h a n ,C h i n a ,i n
+2011 and 2016, respectively. From 2015
+to 2016, he was a visiting student with
+theNationalUniversityofSingapore,Sin-
+gapore. From 2017 to 2018, he was a
+Research Fellow with the Nanyang Technological University,
+Singapore.From2019to2021,hewasaPostdoctoralReseacher
+wi thHUS T .H eiscurr en tlyaA ssocia tePr o f esso rwi thHUS T .
+Data availability statement
+Thedatathatsupportthefindingsofthisstudyareopenlyavail-
+ableat https://people.idsia.ch/∼ monaldo/fjsp.html#Problem.
+ORCID
+Xinyu Li http://orcid.org/0000-0002-3730-0360
+References
+A m i r i ,M . ,M .Z a n d i e h ,M .Y a z d a n i ,a n dA .B a g h e r i .2010.“ A
+Variable Neighbourhood Search Algorithm for the Flexible
+Job-shopSchedulingProblem.” InternationalJournalofPro-
+duction Research48 (19): 5671–5689.https://doi.org/10.10
+80/00207540903055743.
+Beldjilali,B.B. 2019.“IteratedGreedyInsertionApproachesfor
+the Flexible Job Shop Scheduling Problem with Transporta-
+tionTimesConstraint.” InternationalJournalofManufactur-
+ing Research14(1):43–66.
+Berrada, M. 1986. “A Branch and Bound Approach for
+Machine Load Balancing in Flexible Manufacturing Sys-
+tems.”INFORMSJournalonComputing 32(10):1316–1335.
+Brandimarte,P.1993.“RoutingandSchedulinginaFlexibleJob
+ShopbyTabuSearch.” Annals of Operations Research41(3):
+157–183.https://doi.org/10.1007/BF02023073.
+Brucker, P., and R. Schlie.1990.“ J o b - s h o pS c h e d u l i n gw i t h
+Multipurpose Machines.”Computing45(4):369–375.
+Chambers, J. B., and J. W. Barnes.1998.“ F l e x i b l eJ o bS h o p
+Scheduling by Tabu Search.” Technical Report ORP96-09,
+Graduate Program in Operations and Industrial Engineer-
+ing,TheUniversityofTexasatAustin.
+Cheng, T. C. E., B. Peng, and Z. P. Lü.2016.“ AH y b r i dE v o l u -
+tionary Algorithm to Solve the Job Shop Scheduling Prob-
+lem.”Annals of Operations Research242 (2) July: 223–237.
+https://doi.org/10.1007/s10479-013-1332-5.
+DauzerePeres, S., and J. Paulli.1997.“ A nI n t e gr a t edA p p r oa c h
+for Modeling and Solving the General Multiprocessor Job-
+shop Scheduling Problem Using Tabu Search.”Annals of
+Operations Research70:281–306. https://doi.org/10.1023/A:
+1018930406487.
+Defersha,F.M.,D.Obimuyiwa,andA.D.Yimer. 2022.“ Ma th-
+ematical Model and Simulated Annealing Algorithm for
+Setup Operator Constrained Flexible Job Shop Scheduling
+Problem.”Computers&IndustrialEngineering 171(Septem-
+ber):108487. https://doi.org/10.1016/j.cie.2022.108487.
+D i n g ,J .W . ,Z .P .L ü ,C .M .L i ,L .J .S h e n ,L .P .X u ,F .G l o v e r ,
+and Aaai. 2019. “A Two-individual Based Evolutionary
+Algorithm for the Flexible Job Shop Scheduling Problem.”
+InAAAIConferenceonartificialintelligence ,2262–2271.
+Duan, J. G., and J. H. Wang.2022.“ R o b u s tS c h e d u l i n gf o r
+Flexible Machining Job Shop Subject to Machine Break-
+downsandNewJobArrivalsConsideringSystemReusability
+and Task Recurrence.”Expert Systems with Applications203
+(October):15.
+F a t t a h i ,P . ,M .S .M e h r a b a d ,a n dF .J o l a i .2007.“ M a t h e m a t i -
+calModelingandHeuristicApproachestoFlexibleJobShop
+Scheduling Problems.”Journal of Intelligent Manufacturing
+18 (3) June: 331–342.https://doi.org/10.1007/s10845-007-
+0026-8.
+Fattahi,P .,N.B.Rad,F .Daneshamooz,andS.Ahmadi. 2020.“A
+N
+ewHybridParticleSwarmOptimizationandParallelVari-
+able Neighborhood Search Algorithm for Flexible Job Shop
+Scheduling with Assembly Process.”Assembly Automation
+40(3):419–432.
+González,M.A.,C.R.Vela,andR.Varela. 2015.“ScatterSearch
+with Path Relinking for the Flexible Job Shop Scheduling
+Problem.”European Journal of Operational Research245(1)
+August:35–45. https://doi.org/10.1016/j.ejor.2015.02.052.
+Gui,L.,X.Y.Li,L.Gao,andJ.Xie. 2022.“AnApproximateEval-
+uation Method for Neighbourhood Solutions in Job Shop
+Scheduling Problem.”IET Collaborative Intelligent Manu-
+facturing4(3)September:157–165. https://doi.org/10.1049/
+cim2.12049.
+Kemmoé-Tchomté, S., D. Lamy, and N. Tchernev. 2017.
+“An Effective Multi-start Multi-level Evolutionary Local
+Search for the Flexible Job-shop Problem.” Engineering
+Applications of Artificial Intelligence 62 (June): 80–95.
+https://doi.org/10.1016/j.engappai.2017.04.002.
+L e n g ,J .W . ,J .W .G u o ,H .Z h a n g ,K .L .X u ,Y .Q i a o ,P .Z h e n g ,
+andW.M.Shen. 2023.“DualDeepReinforcementLearning
+Agents-based Integrated Order Acceptance and Scheduling

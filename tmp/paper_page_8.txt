@@ -1,0 +1,117 @@
+INTERNATIONAL JOURNAL OF PRODUCTION RESEARCH 7927
+Step 1: Parameters setting. Set the tabu list length
+L = 15 +n / m, and the permitted maximum unim-
+proved step sizenotImproveIter.
+Step 2: Tabu list initialisation. Set the tabu list as an
+emptysetØ;
+Step 3: Individual initialisation. Randomly generate
+an initial solutionx0 and use it as the current optimal
+solutionxb.
+Step4:Fitnessevaluation.Evaluatethefitnessvalueof
+theinitialsolution x0.
+Step 5: Neighbourhood solution selection. The neigh
+bourhoodsolutionsetof x0,Children,isgeneratedbased
+on the mixed neighbourhood structure of N8 andk-
+insertion, and the optimal solutionx’w h i c hi sn o tt a b u
+or satisfies the aspiration criteria is selected from the
+Children.U pda tex0 ← x’.
+Step6:Updatethetabulist.Updatethetabulistaccord-
+ingtotheopera tio nmo vemen tfr o mx0 tox’step .
+Step 7: Update the current optimal solution. If the
+fitness value ofx’islessthan xb,thenu pda texb← x’.
+Step 8: Termination criteria. If the fitness value ofxb
+reachesthelowerbound,orthenumber ofunimproved
+steps ofxb reaches notImproveIter,t h ec u r r e n to p t i m a l
+solutionxb iso u tp u t.Otherwise,r eturntoS tep5.
+3.4.2. Hybrid neighbourhood structure
+T h ec r i t i c a lp a t hi st h el o n g e s tp a t hi nas c h e d u l i n g
+solution, directly determining the makespan. For FJSP,
+if the critical path of the original solution remains
+unchanged, then the makespan of the new solution can-
+not be smaller than the makespan of the original one.
+Therefore, in this paper, two neighbourhood structures,
+N8 and k-insertion, are integrated to generate neigh-
+bourhood solutions. Both structures focus on altering
+the critical path by moving critical operations, thereby
+creatingnewschedulingpossibilities.
+It has been proved in our previous papers (Xie et al.
+2022b) that compared with the classical N5, N6 & N7
+neighbourhoodstructures,theN8neighbourhoodstruc-
+ture not only considers the key processes moving inside
+t h ek e yb l o c k sb u ta l s oc o n s i d e r sm o v i n gt h ek e yp r o -
+cessesoutsidethekeyblocks.Thisbroaderscopeenables
+the algorithm to explore a larger solution space, signifi-
+cantlyincreasingthelikelihoodofidentifyingtheoptimal
+solution.
+The k-insertion neighbourhood structure was pro-
+posed by Mastrolilli and Gambardella (2000). Its core
+idea is to transform the processing machine of critical
+operations. Figure7illustrates the schematic diagram of
+thek-insertionneighbourhoodstructure,wherethepro-
+cessingmachineofthecriticaloperation oistransformed
+from m
+2 to m1. MP [o]a n dMS[o] denote the prede-
+cessor and successor operations of the critical operation
+Figure 7. Schematic diagram of k-insertion neighbourhood
+structure.
+o on machine m2,r e s p e c t i v e l y .u and v represent two
+operationsonmachinem 1.Whenthemovementofthe k-
+insertionneighbourhoodstructureisexecuted,thecriti-
+cal operationo is moved between operationsu andv on
+machine m
+1. Because the critical operationo leaves its
+previous critical block, it changes the critical path of the
+originalsolution.
+The feasibility of machine transformations in k-
+insertion neighbourhood structure can be guaranteed
+b yt h e o r e m s1a n d2p r o p o s e db yM a s t r o l i l l ia n dG a m -
+bardella (2000). In this section,r
+o and to are used to
+denotethestarttimeandendtimeofoperation o,respec-
+tively.Let ro− = rJP[o] +pJP[o],to− = pJS[o] +tJS[v].Qm1
+d e n o t e st h es e to fo p e r a t i o n st h a ta r ep r o c e s s e do n
+machinem1.Foursubsetsbelongingtoitcanbeobtained
+fromQm1:
+Rm1 = (x ∈Qm1|rx +px > r−
+v ) (8)
+R−
+m1 = (x ∈Qm1|r−
+x +px > r−
+v ) (9)
+Lm1 = (x ∈Qm1|px +tx > t−
+v ) (10)
+L−
+m
+1 = (x ∈Qm1|px +t−
+x > t−
+v ) (11)
+Theorem 1: if Lm1 ∩Rm1 ̸=∅, ∀operation x∈Lm1 ∩
+Rm1,thereisneitherapathfromoperationotooperationx,
+norapathfromoperationxtooperationo.Therefore,when
+inserting operation o into Lm1 ∩Rm1,n ol o o pisgen er a t e d
+inthenewsolution.Similarly,ifL −
+m1 ∩R−
+m
+1 ̸=∅,thereisno
+loopgeneratedwheninsertingoperationointoL −
+m
+1 ∩R−
+m
+1.
+Figure 8 shows the insertable points on machine m1 of
+operationowhenL m1 ∩Rm1 ̸=∅.
+Theorem 2: if Lm1 ∩Rm1 =∅, ∀operation x∈Qm1 −
+Lm1 − Rm1, there is neither a path from operation o to
+operation x, nor a path from operation x to operation
+o. Therefore, when moving operation o to positions after
+the operations belonging to L
+m1 and before the operations
+belongingtoR m1,noloopisgener a tedinthenewsolution.
+Similarly, if L−
+m1 ∩R−
+m
+1 ̸=∅, there is no loop generated
+when moving operation o to positions after the operations
+belonging to Lm1 and before the operations belonging to
+Rm1.F i g u r e9shows the insertable points on machine m1
+ofoperationowhenL m1 ∩Rm1 =∅.
